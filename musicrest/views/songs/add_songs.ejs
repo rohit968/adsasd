@@ -1,0 +1,30 @@
+<%- include('../partials/header.ejs') %> <%- include('../partials/navbar.ejs')
+%>
+
+<div class="container mt-5">
+  <form action="/a_songs" method="POST">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" name="name" />
+    </div>
+    <div class="mb-3">
+      <label for="date_of_release" class="form-label">Date of Release</label>
+      <input
+        type="date"
+        class="form-control"
+        id="date_of_release"
+        name="date_of_release"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="cover_image" class="form-label">Date of Release</label>
+      <input
+        type="file"
+        class="form-control"
+        id="cover_image"
+        name="cover_image"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
